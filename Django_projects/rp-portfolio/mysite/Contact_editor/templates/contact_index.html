@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% block page_content %}
+<h1>List of ContactText objects</h1>
+        {% for contact_text in all_contact_texts %}
+        <pre> {{ contact_text.input_text }}  
+                -------------------------  
+                {{ contact_text.output_text}}
+                ------------------------
+                {{contact_text.first_name}}
+                -------------------------
+                {{contact_text.last_name}}
+                ------------------------
+                {{contact_text.academic_title}}
+                ------------------------
+                {{contact_text.company_name}}
+                -------------------------
+                {{contact_text.position}}
+                -------------------------
+                {{contact_text.street}}
+                -------------------------
+                {{contact_text.house_number}}
+                -------------------------
+                {{contact_text.adress_detail}}
+                -------------------------
+                {{contact_text.zip}}
+                -------------------------
+                {{contact_text.city}}
+                -------------------------
+                {{contact_text.region}}
+                -------------------------
+                {{contact_text.country}}
+                -------------------------
+                {{contact_text.email}}
+                -------------------------
+                {{contact_text.phone_number}}
+                -------------------------
+                {{contact_text.mobile_phone_number}}
+                -------------------------
+                {{contact_text.fax_number}}
+                -------------------------
+                {{contact_text.web_site}}
+                -------------------------
+                {{contact_text.facebook}}
+                -------------------------
+                {{contact_text.linkedin}}
+                -------------------------
+        </pre>
+        {% endfor %}
+{% endblock %}

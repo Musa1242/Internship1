@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+   
+  <head>
+    <title>Contact editor</title>
+  </head>
+   
+  <body>
+    <!--{% load static %}>
+    <!--img src="{% static 'Contact_editor/What-is-GPT.png' %}" alt="My image">
+    <!--showing success message-->
+  {% if messages %}
+    <ul class="messages">
+        {% for message in messages %}
+            <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>
+              {{ message }}</li>
+        {% endfor %}
+    </ul>
+   {% endif %}
+     
+    
+   <form action="" method="post">
+    {% csrf_token %}    
+     <label for="Contact">Enter your ContactText:</label>
+     <textarea type="Contact" rows="10" cols="40" id="Contact" name="Contact"> </textarea>
+
+      <br> <br>
+     <button type="submit" name="Add">Add</button>
+   </form>
+   <hr> </hr>
+   <h1>Contact_recall</h1>
+      <p>
+          <a href="http://127.0.0.1:8000/Contacts/">You can recall stored Contacts from the database.</a> 
+      </p>
+  </body>
+</html>
